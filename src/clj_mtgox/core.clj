@@ -11,7 +11,7 @@
 
 (defn- make-path
     [parts]
-    (reduce #(str %1 \/ %2) "" parts))
+    (reduce #(str %1 \/ %2) (first parts) (rest parts)))
 
 (defn- hmac-sha-512
     [secret msg]
