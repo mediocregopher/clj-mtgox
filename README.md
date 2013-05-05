@@ -5,7 +5,7 @@ An UNOFFICIAL clojure library for interacting with MtGox's api/2 endpoint.
 ## Disclaimer
 
 The documentation for MtGox's api is sketchy at the moment, most of my information on its current
-state I got from (this)[https://bitbucket.org/nitrous/mtgox-api/overview] page (super thank you to
+state I got from [this](https://bitbucket.org/nitrous/mtgox-api/overview) page (super thank you to
 nitrous for putting that together). I've made this library fairly low level; it pretty much just
 handles the api-key signing stuff, the rest is up to you. It is still possible, however,
 that the API could change and this becomes out of date, so test before using!
