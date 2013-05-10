@@ -1,4 +1,4 @@
-(defproject clj-mtgox "0.1"
+(defproject  org.clojars.mediocregopher/clj-mtgox "0.1"
   :description "MtGox (unofficial) api library"
   :url "http://github.com/mediocregopher/clj-mtgox"
   :license {:name "Eclipse Public License"
