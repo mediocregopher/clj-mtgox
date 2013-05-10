@@ -30,6 +30,7 @@
 
 (defn- process-response
     [res]
+    (println "res" res)
     (let [json-res (parse-string (res :body) true)]
         (if (= (json-res :result) "success") (json-res :data) json-res)))
 
@@ -55,7 +56,7 @@
     (let [full-arg-vecs (cons (nonce-vec) arg-vecs)
           post-args (make-args full-arg-vecs)
           path (make-path url-parts)
-          url (str "http://data.mtgox.com/api/2/" path)
+          url (str "https://data.mtgox.com/api/2/" path)
           rest-key (obj :key)
           rest-sign (make-rest-sign (obj :secret) path post-args)]
     (process-response
