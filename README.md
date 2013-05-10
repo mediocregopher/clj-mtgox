@@ -13,7 +13,7 @@ that the API could change and this becomes out of date, so test before using!
 ## Installation
 
 ```
-[org.clojars.mediocregopher/clj-mtgox "0.2"]
+[org.clojars.mediocregopher/clj-mtgox "0.3"]
 ```
 
 ## Usage

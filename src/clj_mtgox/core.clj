@@ -30,7 +30,6 @@
 
 (defn- process-response
     [res]
-    (println "res" res)
     (let [json-res (parse-string (res :body) true)]
         (if (= (json-res :result) "success") (json-res :data) json-res)))
 
